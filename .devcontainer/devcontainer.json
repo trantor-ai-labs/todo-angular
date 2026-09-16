@@ -1,0 +1,9 @@
+{
+  "name": "todo-angular",
+  "build": { "dockerfile": "../Dockerfile", "target": "build" },
+  "forwardPorts": [4200, 8081],
+  "postCreateCommand": "node -v && npx ng version",
+  "customizations": {
+    "vscode": { "extensions": ["angular.ng-template", "dbaeumer.vscode-eslint"] }
+  }
+}
